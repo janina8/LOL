@@ -13,11 +13,9 @@ public class Main {
         Scanner input = new Scanner(System.in);
         int chislo;
 
-
         while (true) {
             System.out.println("Vvedite chislo ");
             chislo = Integer.valueOf(input.nextLine());
-
 
             if (chislo > v) {
                 System.out.println("Menjwe");
@@ -26,7 +24,6 @@ public class Main {
             } else {
                 System.out.println("Ugodal");
                 break;
-
 
             }
         }
@@ -56,7 +53,6 @@ public class Main {
             else {
                 System.out.println("Ugodal");
                 break;
-
 
             }
         }

@@ -9,35 +9,28 @@ public class Main {
         Random rnd = new Random();
         int v = rnd.nextInt(10);
         Scanner input = new Scanner(System.in);
+        int chislo;
+
 
         while (true) {
-            System.out.println("Vvedite chislo");
+            System.out.println("Vvedite chislo "); chislo = Integer.valueOf(input.nextLine());
 
-            int chislo = Integer.valueOf(input.nextLine());
 
-            if (chislo != v) {
-                System.out.println("Net");
-            }
             if (chislo > v) {
                 System.out.println("Menjwe");
-            }
-            if (chislo < v) {
+            } else if (chislo < v) {
                 System.out.println("Boljwe");
-            }
-
-            if (chislo == v) {
+            } else {
                 System.out.println("Ugodal");
                 break;
 
 
             }
-
         }
     }
+
+
 }
-
-
-
 
 
 

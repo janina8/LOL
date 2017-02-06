@@ -1,3 +1,5 @@
+1. Ugodajka
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -30,6 +32,46 @@ public class Main {
         }
     }
 }
+
+2. Zagadajka
+
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+
+
+        Scanner input = new Scanner(System.in);
+        int chislo;
+
+        while (true) {
+            System.out.println("Zagadaj chislo ");
+            Random rnd = new Random();
+            int v = rnd.nextInt(10);
+            chislo = Integer.valueOf(input.nextLine());
+
+            if (chislo != v) System.out.println("A ja dumal:" + v);
+            else {
+                System.out.println("Ugodal");
+                break;
+
+
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
 
 
 

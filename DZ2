@@ -1,1 +1,47 @@
-test
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Random rnd = new Random();
+        int v = rnd.nextInt(10);
+        Scanner input = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Vvedite chislo");
+
+            int chislo = Integer.valueOf(input.nextLine());
+
+            if (chislo != v) {
+                System.out.println("Net");
+            }
+            if (chislo > v) {
+                System.out.println("Menjwe");
+            }
+            if (chislo < v) {
+                System.out.println("Boljwe");
+            }
+
+            if (chislo == v) {
+                System.out.println("Ugodal");
+                break;
+
+
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

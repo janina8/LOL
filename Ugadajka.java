@@ -33,7 +33,7 @@ public class Ugadajka {
                     max = 10 ;
                 }
 
-                else if (sravnenie.equals ("=") ) { // тут теперь можно просто елс оставить.
+                else (sravnenie.equals ("=") ) { 
                     System.out.println("Твое число равно");
                     break;
                 }
